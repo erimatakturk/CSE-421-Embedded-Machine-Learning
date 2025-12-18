@@ -1,0 +1,22 @@
+#ifndef SAMPLE_TEMPERATURE_H
+#define SAMPLE_TEMPERATURE_H
+
+// Son 5 sıcaklık değeri → bir sonraki saat tahmini
+static const float TEMP_DB[][5] = {
+    {22.1f, 22.3f, 22.4f, 22.2f, 22.0f},
+    {22.3f, 22.4f, 22.2f, 22.0f, 21.9f},
+    {22.5f, 22.6f, 22.4f, 22.3f, 22.1f},
+    {22.8f, 22.7f, 22.6f, 22.4f, 22.3f}
+};
+
+// Gerçek gelecek değerler (karşılaştırma için)
+static const float TEMP_NEXT[] = {
+    22.3f,
+    22.5f,
+    22.7f,
+    22.9f
+};
+
+static const int TEMP_DB_SIZE = 4;
+
+#endif
